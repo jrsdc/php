@@ -1,0 +1,113 @@
+@import url('https://stockfont.org/?5d91c73e879232e9960b6d5cb882f35a3f05223eae23a02fb70b3d98557eff43');
+
+* {margin: 0; padding: 0;}
+body {background-color: #DEDEDE; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+}
+
+h1 { font-family: 'Audiowide', cursive; margin: 0.4em;}
+aside h1 a {color: white;}
+header h1:before {content: "\1F5B3"; font-family: 'hack'; padding-right: 0.4em;}
+header h1 {color: #92B2BF; text-shadow: 2px 2px 2px darkgreen;}
+
+body > section {grid-area: img; height: 20vh; background-position: center center;
+	background-image: url(images/randombanner.php);
+	max-height: 300px;
+	background-position: center center;}
+header a { color: white; text-decoration: none; }
+
+header address {float: right; color: white; font-style: normal; padding: 1em;}
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #E8E8E8;}
+
+header {background-color: #1C2524; grid-area: header;}
+
+main h1, main a {color: #92B2BF;}
+aside {background-color: #2A3F52; min-height: 20px; grid-area: aside; padding: 1vw; color: white;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header { display: grid;  grid-template-columns: 10% 80% 10%;}
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+header > ul > li {font-size: 2em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left: 10vw; text-align: left; display: none; position: absolute; background-color: #333; padding: 20px;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+
+h2 {margin-top: 0.5em;  margin-bottom: 0.5em;}
+form label, form input, form textarea {margin-top: 1em; margin-bottom: 1em ;box-sizing: border-box;  display: block; width: 46%; padding: 2%; float: left;}
+form textarea {height: 400px;}
+form input[type="submit"] {margin-left: 46%;}
+form {overflow: auto;}
+
+.products, .reviews {list-style-type: none;}
+.products li, .reviews li {padding: 2em;}
+.products li:nth-child(odd), .reviews li:nth-child(odd) {background-color: #fff;}
+.products li:nth-child(even), .products li:nth-child(even) {background-color: #ddd;}
+
+.price { text-align: right; color: darkgreen; font-family: 'Audiowide'; font-weight: bold; font-size: 2em;}
+
+.reviews .details {text-align: right;}
+
+h4 {margin-top: 1em; margin-bottom: 1em;}
+
+
+
+.error
+{
+	color: red !important;
+	font-size: 12px !important;
+}
+
+
+ 
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+
+
+.answer
+{
+  color: #2946b4 !important;
+}
+
+.image
+{
+  max-width: 100% !important;
+ 
+}
